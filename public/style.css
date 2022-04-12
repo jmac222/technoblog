@@ -1,0 +1,105 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: inherit;
+  overflow-x: hidden;
+  
+  
+}
+
+html, body{
+    background-color: #212529;
+}
+
+.header{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 64px;
+}
+
+.styleinp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 50vw;
+    margin: auto;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    height: 35vh;
+    padding: 2px;
+    font-size: 16px;
+    
+}
+.subject{
+    height: 6vh;
+    padding: 2px;
+    border-bottom: 5px solid black;
+    font-size: 22px;
+}
+
+.submit-post{
+    background-color: green;
+    width: 10%;
+    text-align: center;
+    align-self: center;
+    margin-top: 30px;
+    height: 5vh;
+    color: white;
+    border-radius: 6px;
+}
+.ind-post{
+    background-color: whitesmoke;
+    margin: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 6px;
+    
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.hrule{
+    background-color: #212529;
+    height: 4px;
+}
+
+p{
+    margin-top: 4px;
+    font-size: 22px;
+    
+}
+
+.btn-style{
+    display: flex;
+    justify-content: end;
+}
+.edit{
+    margin: 2px;
+    border: 1px solid black;
+}

@@ -12,4 +12,11 @@ const getPosts = async (req,res) => {
     res.status(200).json({posts})
 }
 
-module.exports = {addPost, getPosts}
+const updatePost = async (req, res) => {
+    const {id, subject, content} = req.body
+    console.log(id, subject, content)
+    // const output = await Post.findByIdAndUpdate(id, {subject: subject, content: content})
+    // res.json({output})
+
+}
+module.exports = {addPost, getPosts, updatePost}
