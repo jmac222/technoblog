@@ -13,10 +13,10 @@ const getPosts = async (req,res) => {
 }
 
 const updatePost = async (req, res) => {
-    const {id, subject, content} = req.body
-    console.log(id, subject, content)
-    // const output = await Post.findByIdAndUpdate(id, {subject: subject, content: content})
-    // res.json({output})
+    const {_id, subject, content} = req.body
+    console.log(_id, subject, content)
+    const output = await Post.findByIdAndUpdate(_id, {subject: subject, content: content})
+    res.json({output})
 
 }
 module.exports = {addPost, getPosts, updatePost}
