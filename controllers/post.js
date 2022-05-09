@@ -16,7 +16,20 @@ const updatePost = async (req, res) => {
     const {_id, subject, content} = req.body
     console.log(_id, subject, content)
     const output = await Post.findByIdAndUpdate(_id, {subject: subject, content: content})
+    
     res.json({output})
 
 }
-module.exports = {addPost, getPosts, updatePost}
+
+
+const deletePost = async (req,res) => {
+    
+    console.log(req.params.id);
+    const output =  await Post.findByIdAndDelete(req.params.id)
+
+
+    res.status(200).send("Good")
+    
+    
+}
+module.exports = {addPost, getPosts, updatePost, deletePost}

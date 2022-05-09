@@ -10,96 +10,132 @@
   background: transparent;
   box-sizing: inherit;
   overflow-x: hidden;
-  
-  
 }
 
-html, body{
-    background-color: #212529;
+html,
+body {
+  background-color: #212529;
 }
 
-.header{
-    color: whitesmoke;
-    text-align: center;
-    font-size: 64px;
+.header {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 64px;
+  font-family: "Inconsolata", monospace;
+  font-family: "Titillium Web", sans-serif;
 }
 
-.styleinp{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: whitesmoke;
-    width: 50vw;
-    margin: auto;
+.styleinp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 50vw;
+  margin: auto;
 }
-form{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.content{
-    height: 35vh;
-    padding: 2px;
-    font-size: 16px;
-    
+.content {
+  height: 35vh;
+  padding: 2px;
+  font-size: 16px;
 }
-.subject{
+.subject {
+  height: 6vh;
+  padding: 2px;
+  border-bottom: 5px solid black;
+  font-size: 22px;
+}
+
+.submit-post {
+  background-color: green;
+  width: 10%;
+  text-align: center;
+  align-self: center;
+  margin-top: 30px;
+  height: 5vh;
+  color: white;
+  border-radius: 6px;
+  transition: .3s ease-in-out all;
+}
+.submit-post:hover {
+    width: 11%;
     height: 6vh;
-    padding: 2px;
-    border-bottom: 5px solid black;
-    font-size: 22px;
+    background-color: rgb(6, 169, 6);
+    cursor: pointer;
+    }
+.ind-post {
+  background-color: whitesmoke;
+  margin: 10px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 6px;
+  height: 300px;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75vw;
+  margin: auto;
+  margin-top: 20px;
 }
 
-.submit-post{
-    background-color: green;
-    width: 10%;
-    text-align: center;
-    align-self: center;
-    margin-top: 30px;
-    height: 5vh;
-    color: white;
-    border-radius: 6px;
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #212529;
+  font-family: "Inconsolata", monospace;
+  font-family: "Titillium Web", sans-serif;
 }
-.ind-post{
-    background-color: whitesmoke;
-    margin: 10px;
-    width: 100%;
-    padding: 5px;
-    border-radius: 6px;
-    
+.hrule {
+  background-color: #212529;
+  height: 4px;
 }
-.posts{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 75vw;
-    margin: auto;
-    margin-top: 20px;
+
+p {
+  margin-top: 4px;
+  font-size: 22px;
+}
+
+.btn-style {
+  display: flex;
+  justify-content: end;
+}
+.edit {
+  margin: 2px;
+  border: 1px solid black;
+  overflow-y: hidden;
+  text-decoration: none;
+  border: none;
+  height: 30px;
+  
+  
 }
 
 
-h2{
-    font-size: 40px;
-    font-weight: bold;
-    
-}
-.hrule{
-    background-color: #212529;
-    height: 4px;
+.material-symbols-outlined {
+  overflow-x: clip;
+  height: fit-content;
+  transition: .3s ease-in-out all;
 }
 
-p{
-    margin-top: 4px;
-    font-size: 22px;
-    
+
+.material-symbols-outlined:hover{
+    font-variation-settings:
+  'FILL' 100,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48;
+  cursor: pointer;
+  transition: .3s ease-in-out all;
 }
 
-.btn-style{
-    display: flex;
-    justify-content: end;
-}
-.edit{
-    margin: 2px;
-    border: 1px solid black;
-}
+
+
+
+
